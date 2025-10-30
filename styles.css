@@ -1,12 +1,14 @@
 /* === Kerry Cleaning & Property Management - Main Styles === */
 
 /* Brand Colors */
-:root {
-  --blue: #4BA1C8;
-  --green: #2dbd6e;
-  --orange: #ffa500;
-  --text: #333;
-  --bg: #f4f8fb;
+::root {
+  --brand: #25D366;      /* WhatsApp green */
+  --brand-dark: #111111; /* dark accent */
+  --text: #111;
+  --muted: #555;
+  --bg: #ffffff;
+  --bg-alt: #f7f9fb;
+  --border: #eee;
 }
 
 /* Global Page Setup */
