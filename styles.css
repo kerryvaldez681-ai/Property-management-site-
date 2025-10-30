@@ -359,4 +359,21 @@ footer {
   animation-play-state: paused;
   transform: scale(1.1);
 }
+  /* WhatsApp-style Book Now button */
+.btn-booknow {
+  background-color: #25D366; /* WhatsApp green */
+  color: #fff; /* white text */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px; /* rounded edges */
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-booknow:hover {
+  background-color: #1ebe5d; /* slightly darker green */
+  transform: scale(1.05); /* small zoom */
+}
 
