@@ -209,6 +209,61 @@ footer {
 
   .nav-links.show {
     display: flex;
+  }/* === QR Button Styling === */
+.qr-button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-scan {
+  background: linear-gradient(90deg, #00A884, #007BFF);
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 128, 255, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-scan:hover {
+  background: linear-gradient(90deg, #007BFF, #00A884);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 128, 255, 0.4);
+} /* === QR Button Animation (Mobile Friendly) === */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 168, 132, 0.6);
   }
+  70% {
+    box-shadow: 0 0 0 12px rgba(0, 168, 132, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 168, 132, 0);
+  }
+}
+
+/* Apply animation */
+.btn-scan {
+  animation: pulseGlow 2s infinite;
+}/* === Mobile Responsive: Replace button text with WhatsApp icon === */
+@media (max-width: 600px) {
+  .btn-scan {
+    font-size: 0; /* hides text */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #00A884, #007BFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-scan::before {
+    content: "💬"; /* WhatsApp-style chat bubble emoji */
+    font-size: 28px;
+  }
+}
 }
 
