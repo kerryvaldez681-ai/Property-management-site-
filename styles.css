@@ -317,6 +317,12 @@ footer {
   border-radius: 8px;
   text-decoration: none;
 }
+  .btn-whats:hover {
+  background-color: #1ebe5d; /* slightly lighter WhatsApp green */
+  transform: scale(1.08); /* small zoom on hover */
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.8); /* glowing effect */
+  animation: pulse-glow 3s infinite ease-in-out;
+}
 
 /* mobile: show hamburger and collapsible menu */
 .nav-toggle{
@@ -349,11 +355,10 @@ footer {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
-
 .whatsapp-float {
-  animation: pulse 4s infinite; /* slower, smoother pulse */
   transition: transform 0.3s ease-in-out;
 }
+
 
 .whatsapp-float:hover,
 .whatsapp-float:active {
