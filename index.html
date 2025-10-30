@@ -144,5 +144,20 @@
       <a href="https://tiktok.com" target="_blank">TikTok</a>
     </p>
   </section>
+  </section>
+
+<!-- JavaScript for mobile menu toggle -->
+<script>
+  const menuBtn = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuBtn && navLinks){
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+</script>
+
+</body>
+</html>
 
   
