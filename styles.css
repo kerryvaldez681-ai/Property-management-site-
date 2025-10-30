@@ -1,0 +1,69 @@
+/* === Kerry Cleaning & Property Management Styles === */
+
+:root {
+  --blue: #0073e6;
+  --green: #2dbd6e;
+  --orange: #ffa500;
+  --text: #333;
+  --bg: #f4f8fb;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to right, var(--blue), var(--green));
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+section {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+section h2 {
+  color: var(--green);
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+a.button {
+  display: inline-block;
+  background-color: var(--orange);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
