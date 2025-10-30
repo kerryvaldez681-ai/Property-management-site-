@@ -337,12 +337,13 @@ footer {
   }
   .nav-links.show{ display: flex; }
 } /* WhatsApp Floating Button Animation */
+/* Smooth glowing pulse for WhatsApp button */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
   }
   70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
@@ -350,8 +351,8 @@ footer {
 }
 
 .whatsapp-float {
-  animation: pulse 2s infinite;
-  transition: transform 0.2s ease-in-out;
+  animation: pulse 4s infinite; /* slower, smoother pulse */
+  transition: transform 0.3s ease-in-out;
 }
 
 .whatsapp-float:hover,
