@@ -264,6 +264,77 @@ footer {
     content: "💬"; /* WhatsApp-style chat bubble emoji */
     font-size: 28px;
   }
+/* ===== Sticky Header & Top Nav ===== */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
 }
+
+.top-nav{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+}
+
+.brand{
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+/* nav links */
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  margin-left: auto;
+  padding-left: 0;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: var(--dark);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover{
+  background: var(--light);
+}
+
+/* WhatsApp button in the nav */
+.btn-whats{
+  background: #25D366;   /* WhatsApp green */
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* mobile: show hamburger and collapsible menu */
+.nav-toggle{
+  display: none;
+  margin-left: auto;
+  font-size: 24px;
+  background: transparent;
+  border: 0;
+}
+
+@media (max-width: 768px){
+  .nav-toggle{ display: block; }
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px 0 0;
+  }
+  .nav-links.show{ display: flex; }
 }
 
