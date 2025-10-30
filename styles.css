@@ -336,5 +336,27 @@ footer {
     margin: 8px 0 0;
   }
   .nav-links.show{ display: flex; }
+} /* WhatsApp Floating Button Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:active {
+  animation-play-state: paused;
+  transform: scale(1.1);
 }
 
