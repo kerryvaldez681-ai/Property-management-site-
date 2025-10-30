@@ -5,6 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kerry Cleaning & Property Management</title>
   <link rel="stylesheet" href="./styles.css">
+    <style>
+  :root { --brand: #25D366; }
+
+  /* Sticky header */
+  header.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  /* Optional small helper class for screen-reader text */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Floating WhatsApp button */
+  .whatsapp-float {
+    position: fixed;
+    right: 18px;
+    bottom: calc(18px + env(safe-area-inset-bottom));
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--brand);
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    z-index: 1100;
+    font-size: 28px;
+  }
+
+  .whatsapp-float:active {
+    transform: translateY(1px);
+  }
+</style>
 </head>
   <body>
   <!-- Sticky Top Navigation -->
@@ -155,9 +203,22 @@
       navLinks.classList.toggle('show');
     });
   }
-</script>
+</script> <a
+  class="whatsapp-float"
+  href="https://wa.me/50487915483?text=Hi%20Kerry!%20I%27d%20like%20a%20cleaning%20quote."
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat on WhatsApp"
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    alt="WhatsApp"
+    width="34"
+    height="34"
+  >
+</a>
+<span class="sr-only">Chat on WhatsApp</span>
 
-</body>
 </html>
 
   
