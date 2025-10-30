@@ -154,7 +154,8 @@
 
     <div class="card">
       <h2>📞 Contact Us</h2>
-      <p><strong>Phone:</strong> <a href="tel:+50487915483">+504 8791-5483</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+50487915483">+504 8791-5483</a></p><p>📲 Scan our WhatsApp QR to chat instantly:</p>
+<img src="frame.jpeg" alt="WhatsApp QR Code" width="160" style="display:block; margin:auto;">
       <p><strong>Email:</strong> <a href="mailto:kerryvaldez681@gmail.com">kerryvaldez681@gmail.com</a></p>
       <p><strong>Facebook:</strong> <a href="https://facebook.com/share/17TBT1WVBX/?mibextid=wwXIfr" target="_blank">Visit Page</a></p>
       <a href="https://wa.me/50487915483" class="whatsapp-btn" target="_blank">💬 Get a Quote on WhatsApp</a>
