@@ -1,13 +1,15 @@
-/* === Kerry Cleaning & Property Management Styles === */
+/* === Kerry Cleaning & Property Management - Main Styles === */
 
+/* Brand Colors */
 :root {
-  --blue: #0073e6;
+  --blue: #4BA1C8;
   --green: #2dbd6e;
   --orange: #ffa500;
   --text: #333;
   --bg: #f4f8fb;
 }
 
+/* Global Page Setup */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
@@ -16,54 +18,111 @@ body {
   padding: 0;
 }
 
+/* Header Section */
 header {
   background: linear-gradient(to right, var(--blue), var(--green));
   color: white;
   text-align: center;
-  padding: 2.5rem 1rem;
+  padding: 50px 20px;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 28px;
   margin: 0;
 }
 
 header p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 16px;
+  font-style: italic;
+  margin: 5px 0 0;
 }
 
-section {
-  padding: 2.5rem 1.5rem;
+/* About Section */
+#about {
+  padding: 40px 20px;
+  background: white;
+  text-align: left;
+}
+
+#about h2 {
   text-align: center;
+  color: var(--blue);
+  margin-bottom: 15px;
 }
 
-section h2 {
-  color: var(--green);
+#about p {
+  line-height: 1.7;
+  font-size: 16px;
 }
 
-section p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.05rem;
+/* Services Section */
+#services {
+  padding: 40px 20px;
+  background-color: #f4f8fb;
+  border-top: 3px solid var(--blue);
+  border-bottom: 3px solid var(--blue);
+  text-align: left;
+}
+
+#services h2 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+#services ul {
+  list-style: none;
+  padding: 0;
+}
+
+#services li {
+  margin: 10px 0;
+  font-size: 16px;
   line-height: 1.6;
 }
 
-a.button {
-  display: inline-block;
-  background-color: var(--orange);
-  color: white;
-  padding: 12px 25px;
-  border-radius: 5px;
+#services li strong {
+  color: var(--green);
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: white;
+}
+
+#contact h2 {
+  color: var(--blue);
+}
+
+#contact a {
+  color: var(--green);
   text-decoration: none;
-  margin-top: 15px;
   font-weight: bold;
 }
 
+/* WhatsApp Button */
+.whatsapp-button {
+  display: inline-block;
+  background-color: var(--green);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+  background-color: #249c5b;
+}
+
+/* Footer */
 footer {
   background: var(--blue);
   color: white;
   text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
+  padding: 15px;
+  font-size: 14px;
 }
