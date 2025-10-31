@@ -96,9 +96,15 @@ p{margin:0 0 12px}
   margin-bottom: 25px;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
 .hero-buttons a {
-  margin: 6px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
@@ -112,4 +118,50 @@ p{margin:0 0 12px}
 .btn-secondary {
   border: 2px solid white;
   color: white;
+}
+/* Smooth scroll for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation for hero section */
+.hero, .hero h1, .hero p, .hero-buttons {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.hero h1 {
+  animation-delay: 0.3s;
+}
+
+.hero p {
+  animation-delay: 0.6s;
+}
+
+.hero-buttons {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Glow hover effect for buttons */
+.btn-primary:hover,
+.btn-secondary:hover {
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Smooth hover reset */
+.btn-primary,
+.btn-secondary {
+  transition: all 0.3s ease;
 }
