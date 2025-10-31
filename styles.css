@@ -165,3 +165,51 @@ html {
 .btn-secondary {
   transition: all 0.3s ease;
 }
+/* --- Navigation Links Styling --- */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #4BA1C8;
+  transition: width 0.3s ease;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+  color: #4BA1C8;
+  transform: scale(1.08);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Mobile layout fix */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
